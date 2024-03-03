@@ -1,5 +1,5 @@
 package ru.netology.services;
-public class Metod {
+public class Method {
     public int calculate(int income, int expense, int threshold) {
         // income - доход от работы
         // expense - месячные обязательные траты
