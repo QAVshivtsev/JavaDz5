@@ -1,6 +1,5 @@
-package ru.netology.JavaDz5Z1.service;
-
-public class Metod2 {
+package ru.netology.services;
+public class Metod {
     public int calculate(int income, int expense, int threshold) {
         // income - доход от работы
         // expense - месячные обязательные траты
@@ -9,7 +8,7 @@ public class Metod2 {
         int count = 0; // счётчик месяцев отдыха изначально
         for (int month = 0; month < 12; month++) {   // с 1 по 12 месяц цикл с увеличением на 1 месяц
             // можем ли отдыхать?
-            if (150_000 >= threshold) { // Если денег на ссчету меньше чем нужно для отдыха тогда:
+            if (20_000 >= threshold) { // Если денег на счету меньше чем нужно для отдыха тогда:
                 threshold = threshold + income - expense; // Денег на счету + доход - расходы
             } else {  // Если денег больше на счету чем нужно для отдыха тогда:
                 count++; // увеличиваем счётчик месяцев отдыха
@@ -18,5 +17,4 @@ public class Metod2 {
         }
         return count;  // верни количество месяцев отдыха
     }
-
 }
